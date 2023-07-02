@@ -1,0 +1,613 @@
+$blue: #58E0FE;
+$pink: #F042A0;
+$darkBlue: #000033;
+$darkPink: #330033;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&display=swap');
+@import "_mixins.scss";
+@include button;
+@include footer;
+@include h3;
+@include h2;
+@include h1;
+@include p1;
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Krona one';
+    background-color:$darkBlue;
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    &_left {
+        justify-content: flex-start;
+        margin-left: 89px;
+    }
+    &_right {
+        justify-content: flex-end;
+        margin-right: 89px;
+    }
+&_center {
+    justify-content: center;
+
+}
+
+    &__link {
+        text-transform: capitalize;
+        font-size: 1.625em;
+        color: $blue;
+        text-decoration: none;
+        margin-left: 35px;
+
+        &_img {
+            height: 61.4px;
+            width: 166px;
+            background-image: url(../img/logo.png);
+   padding: 19px;
+   background-repeat: no-repeat;
+        }
+    }
+}
+
+.info {
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1629.93px;
+    height: 130px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &_icons {
+        display: flex;
+ margin-left: 5px;
+
+
+        &_facebook {
+            background-image: url(../img/face.png);
+            width: 67px;
+            height: 67px;
+           margin-left: 5px;
+
+        }
+
+        &_twitter {
+            background-image: url(../img/twitter.png);
+            width: 67px;
+            height: 67px;
+           margin-left: 5px;
+
+        }
+        &_insta {
+            background-image: url(../img/inst.png);
+            width: 67px;
+            height: 67px;
+             margin-left: 5px;
+
+        }
+    }
+}
+
+#reserve {
+    background: #000033;
+    width: auto;
+}
+
+#about_us {
+    background: #330033;
+    width: auto;
+}
+
+#zone {
+    background: #000033;
+    width: auto;
+}
+
+#game {
+    background: #330033;
+    width: auto;
+}
+
+.blue {
+    color: $blue;
+}
+
+.content {
+    z-index: 100;
+    margin-left: 75px;
+    padding: 100px 0 200px 0;
+    width: 938.79px;
+height: 549px;
+   display: flex;
+   flex-direction: column;
+}
+.content>p {
+   margin-bottom: 94px;
+    margin-top: 94px;
+    font-size: 2.326em;
+    z-index: 100;
+}
+
+.content>button {
+    width: 297.67px;
+height: 93.02px;
+}
+
+.content>button>a {
+    font-size: 2.326em;
+}
+
+.bg-png {
+    z-index: 1;
+&_1 {
+  
+    background: url(../img/dym1.png);
+    position: absolute;
+    width: 1337px;
+    height: 928px;
+    left: 510px;
+    top: 60px;
+background-repeat: no-repeat;
+}
+&_2 {
+   
+    background: url(../img/computers.png);
+    position: absolute;
+    width: 1236px;
+    height: 892px;
+    left: 610px;
+    top: 196px;
+background-repeat: no-repeat;
+}
+}
+
+.pink {
+    color: $pink;
+}
+
+.row {
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 100px;
+
+    &_card {
+        margin-left: 36px;
+        display: block;
+    width: 282px;
+    height: 470px;
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 15px;
+    padding-top: 25px;
+    &_text {
+        font-size: 1.625em;
+        text-align: center;
+        padding: 25px;
+    }
+    &_icon1 {
+     margin: 0 auto;
+        width:200px;
+        height: 200px;
+    background-image: url(../img/high-speed.png);
+    
+    }
+
+    &_icon2 {
+        margin: 0 auto;
+           width:200px;
+           height: 200px;
+       background-image: url(../img/happy.png);
+       
+       }
+       
+       &_icon3 {
+        margin: 0 auto;
+           width:200px;
+           height: 200px;
+       background-image: url(../img/24-hours.png);
+       
+       } 
+       
+       &_icon4 {
+        margin: 0 auto;
+           width:200px;
+           height: 200px;
+       background-image: url(../img/calendar.png);
+       
+       }   
+    }
+}
+
+.list {
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+.card {
+   
+    position: relative;
+    width: 408px;
+    height: 664px;
+    color: white;
+    }
+    .card__front{
+    z-index: 1;
+    position: relative;
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 25px;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform .3s cubic-bezier(.2,.85,.4,1.275);
+
+    
+    }
+    
+    .card__front>p {
+        padding: 100px 50px;
+    }
+
+    .card__front>h1 {
+        padding-top: 50px;
+    }
+
+    .card__back{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    background: #ffffff;
+    border-radius: 25px;
+    transform: rotateY(-180deg);
+    transition: transform .3s cubic-bezier(.2,.85,.4,1.275);
+    }
+
+    .card__back>h1 {
+        padding-top: 50px;
+    }
+
+    .card__back>ul {
+        padding: 100px 50px;
+    }
+
+    .card__back>ul>span>li {
+        padding-top: 10px;
+    }
+
+    .card:hover    .card__back {
+    transform: rotateY(0deg);
+    
+    z-index: 2;
+    }
+    .card:active    .card__front {
+    transform: rotateY(180deg);
+    z-index: -1;
+    }
+
+.games {
+    display: flex;
+    width: 1701px;
+height: 1034px;
+
+    &_text>p {
+        width: 884px;
+        height: 629px;
+ margin-left: 150px;
+        font-size: 2.313em;
+    }
+
+    &_png {
+        display: flex;
+        &_one {
+            background-image: url(../img/cs.png);
+            position: absolute;
+width: 339px;
+height: 604px;
+left: 1099px;
+top: 3183px;
+
+        }
+
+        &_two {
+            background-image: url(../img/fort.png);
+            position: absolute;
+width: 346px;
+height: 519px;
+left: 1477px;
+top: 2975px;
+
+        }
+
+        &_tree {
+            background-image: url(../img/d2.png);
+            position: absolute;
+            position: absolute;
+            width: 346px;
+            height: 489px;
+            left: 1477px;
+            top: 3520px;
+
+    }
+}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .main-menu__link {
+        font-size: 1em;
+    }
+
+    .main-menu__link_img {
+        background: none;
+
+    }
+
+    .main-menu_left {
+        margin-left: 0;
+    }
+
+    .main-menu_center {
+height: 0;
+width: 0;
+    }
+
+    .main-menu_right {
+        margin-left: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        width: 400px;
+    }
+
+    .content>p {
+    font-size: 1.3em;
+    width: 400px;
+}
+
+.content>button {
+    padding: 10px 43px;
+}
+
+.content>button{
+    font-size: 1em;
+}
+
+        button {
+            padding: 10px 30px;
+            box-sizing: border-box;
+            border: 2px solid #FFFFFF;
+            border-radius: 25px;
+            background: none;
+        }
+        
+        .button-text{
+        
+            font-size: 1em;
+        
+        }
+
+        .bg-png_1 {
+            background: none;
+        }
+
+        .bg-png_2 {
+            background: none;
+        }
+
+        .row {
+            flex-wrap: wrap;
+        }
+
+        .row_card {
+            margin-bottom: 50px;
+            margin-left: 0;
+        }
+
+        h2 {
+            font-size: 1.3em;
+        }
+
+        .list {
+            flex-wrap: wrap;
+        }
+
+        .card {
+            margin-bottom: 50px;
+            margin-left: 0;
+        }
+.games {
+    height: auto;
+}
+
+.games_text>p {
+    font-size: 1em;
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+}
+.games_png_one {
+    background: none;
+}
+
+.games_png_two {
+    background: none;
+}
+
+.games_png_tree {
+    background: none;
+}
+
+.info {
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 0.7em;
+}
+
+.info_adress {
+   
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+        }
+
+        @media (min-width: 768px) and (max-width:  1800px) {
+            .main-menu {
+                padding-top: 20px;
+            }
+
+            .main-menu__link {
+               
+                font-size: 1.3em;
+            }
+        
+            .main-menu__link_img {
+                background: none;
+        
+            }
+        
+            .main-menu_left {
+                margin-left: 0;
+            }
+        
+            .main-menu_center {
+        height: 0;
+        width: 0;
+            }
+        
+            .main-menu_right {
+                margin-left: 20px;
+            }
+        
+            h1 {
+                font-size: 1.9em;
+                width: 600px;
+            }
+        
+            .content>p {
+            font-size: 1.5em;
+            width: 600px;
+        }
+        
+        .content>button {
+            padding: 10px 43px;
+        }
+        
+        .content>button{
+            font-size: 1em;
+        }
+        
+                button {
+                    padding: 10px 40px;
+                    box-sizing: border-box;
+                    border: 3px solid #FFFFFF;
+                    border-radius: 25px;
+                    background: none;
+                }
+                
+                .button-text{
+                
+                    font-size: 1.3em;
+                
+                }
+        
+                .bg-png_1 {
+                    background: none;
+                }
+        
+                .bg-png_2 {
+                    background: none;
+                }
+        
+                .row {
+                    flex-wrap: wrap;
+                }
+        
+                .row_card {
+                    margin-bottom: 50px;
+                    margin-right: 50px;
+                    margin-left: 0;
+                }
+        
+                h2 {
+                    font-size: 1.5em;
+                }
+        
+                .list {
+                    flex-wrap: wrap;
+                }
+        
+                .card {
+                    margin-bottom: 50px;
+                  
+                }
+
+                .card__front>h1 {
+                    margin-left: -80px;
+                  
+                }
+
+                .card__back>h1 {
+                    margin-left: -80px;
+                  
+                }
+        .games {
+            height: auto;
+        }
+        
+        .games_text>p {
+            font-size: 1.3em;
+            width: 600px;
+            text-align: center;
+            height: 450px;
+            margin-left: 100px;
+        }
+        .games_png_one {
+            background: none;
+        }
+        
+        .games_png_two {
+            background: none;
+        }
+        
+        .games_png_tree {
+            background: none;
+        }
+        
+        .info {
+            align-items: center;
+            height: auto;
+            width: auto;
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-size: 0.7em;
+        }
+        
+        .info_adress {
+           
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+                }

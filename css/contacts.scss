@@ -1,0 +1,273 @@
+$blue: #58E0FE;
+$pink: #F042A0;
+$darkBlue: #000033;
+$darkPink: #330033;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&display=swap');
+@import "_mixins.scss";
+@include button;
+@include footer;
+@include h3;
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    font-family: 'Krona one';
+    background: $darkBlue;
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    &_left {
+        justify-content: flex-start;
+        margin-left: 89px;
+    }
+    &_right {
+        justify-content: flex-end;
+        margin-right: 89px;
+    }
+&_center {
+    justify-content: center;
+
+}
+
+    &__link {
+        text-transform: capitalize;
+        font-size: 1.625em;
+        color: $blue;
+        text-decoration: none;
+        margin-left: 35px;
+
+        &_img {
+            height: 61.4px;
+            width: 166px;
+            background-image: url(../img/logo.png);
+   padding: 19px;
+   background-repeat: no-repeat;
+        }
+    }
+}
+
+.contacts {
+    height: auto;
+    background: $darkBlue;
+}
+
+.content {
+    width: 1773px;
+    height: 601px;
+padding: 100px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_text {
+        width: 941px;
+        font-family: 'Inter';
+font-weight: 400;
+font-size: 2.2em;
+color: #FFFFFF;
+    }
+    &_png {
+        background-image: url(../img/map.png);
+        width: 800px;
+        height: 600px;
+    }
+}
+
+.info {
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1629.93px;
+    height: 130px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &_icons {
+        display: flex;
+ margin-left: 5px;
+
+
+        &_facebook {
+            background-image: url(../img/face.png);
+            width: 67px;
+            height: 67px;
+           margin-left: 5px;
+
+        }
+
+        &_twitter {
+            background-image: url(../img/twitter.png);
+            width: 67px;
+            height: 67px;
+           margin-left: 5px;
+
+        }
+        &_insta {
+            background-image: url(../img/inst.png);
+            width: 67px;
+            height: 67px;
+             margin-left: 5px;
+
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .main-menu__link {
+        font-size: 1em;
+    }
+
+    .main-menu__link_img {
+        background: none;
+
+    }
+
+    .main-menu_left {
+        margin-left: 0;
+    }
+
+    .main-menu_center {
+height: 0;
+width: 0;
+    }
+
+    .main-menu_right {
+        margin-left: 20px;
+    }
+
+    .content {
+        height: auto;
+        width: auto;
+    }
+
+.content>button {
+    padding: 10px 43px;
+}
+
+.content>button{
+    font-size: 1em;
+}
+
+        button {
+            padding: 10px 30px;
+            box-sizing: border-box;
+            border: 2px solid #FFFFFF;
+            border-radius: 25px;
+            background: none;
+        }
+        
+        .button-text{
+        
+            font-size: 1em;
+        
+        }
+
+  .content_text>p {
+    font-size: 0.7em;
+    width: 400px;
+  }
+.content_png {
+    background: none;
+}
+.info {
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 0.7em;
+}
+
+.info_adress {
+   
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+        }
+
+        @media (min-width: 768px) and (max-width: 1800px) {
+            .main-menu__link {
+                font-size: 1.5em;
+            }
+        
+            .main-menu__link_img {
+                background: none;
+        
+            }
+        
+            .main-menu_left {
+                margin-left: 0;
+            }
+        
+            .main-menu_center {
+        height: 0;
+        width: 0;
+            }
+        
+            .main-menu_right {
+                margin-left: 20px;
+            }
+        
+            .content {
+                height: auto;
+                width: auto;
+            }
+        
+        .content>button {
+            padding: 10px 43px;
+        }
+        
+        .content>button{
+            font-size: 1em;
+        }
+        
+                button {
+                    padding: 10px 40px;
+                    box-sizing: border-box;
+                    border: 3px solid #FFFFFF;
+                    border-radius: 25px;
+                    background: none;
+                }
+                
+                .button-text{
+                
+                    font-size: 1.3em;
+                
+                }
+        
+          .content_text>p {
+            font-size: 1em;
+            margin-left: 50px;
+            width: 600px;
+            text-align: center;
+          }
+        .content_png {
+            background: none;
+        }
+        .info {
+            align-items: flex-start;
+            height: auto;
+            width: auto;
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-size: 1em;
+        }
+        
+        .info_adress {
+           
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+                }

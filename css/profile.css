@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&display=swap");
+.button-text {
+  font-size: 1.625em;
+  color: #FFFFFF;
+  font-family: "Krona One";
+  align-items: center;
+  text-decoration: none;
+}
+
+button {
+  padding: 15px 53px;
+  box-sizing: border-box;
+  border: 3px solid #FFFFFF;
+  border-radius: 25px;
+  background: none;
+}
+
+footer {
+  background: #1C1C1C;
+}
+
+h3 {
+  font-family: "Krona One";
+  font-size: 1.625em;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+
+h2 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.625em;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+h1 {
+  font-family: "Krona One";
+  font-size: 3.75em;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  font-family: "Krona one";
+  background: #000033;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.main-menu_left {
+  justify-content: flex-start;
+  margin-left: 89px;
+}
+.main-menu_right {
+  justify-content: flex-end;
+  margin-right: 89px;
+}
+.main-menu_center {
+  justify-content: center;
+}
+.main-menu__link {
+  text-transform: capitalize;
+  font-size: 1.625em;
+  color: #58E0FE;
+  text-decoration: none;
+  margin-left: 35px;
+}
+.main-menu__link_img {
+  height: 61.4px;
+  width: 166px;
+  background-image: url(../img/logo.png);
+  padding: 19px;
+  background-repeat: no-repeat;
+}
+
+.info {
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1629.93px;
+  height: 130px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.info_icons {
+  display: flex;
+  margin-left: 5px;
+}
+.info_icons_facebook {
+  background-image: url(../img/face.png);
+  width: 67px;
+  height: 67px;
+  margin-left: 5px;
+}
+.info_icons_twitter {
+  background-image: url(../img/twitter.png);
+  width: 67px;
+  height: 67px;
+  margin-left: 5px;
+}
+.info_icons_insta {
+  background-image: url(../img/inst.png);
+  width: 67px;
+  height: 67px;
+  margin-left: 5px;
+}
+
+.booking {
+  margin: 100px auto 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.38);
+  border-radius: 25px;
+  width: 623px;
+  height: 450px;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px 0 40px 0;
+}
+
+p {
+  padding: 10px 0;
+}
+
+label {
+  margin-left: 25px;
+}
+
+input {
+  width: 193px;
+  height: 46px;
+  background: #D9D9D9;
+  border-radius: 15px;
+}
+
+select {
+  width: 193px;
+  height: 46px;
+  background: #D9D9D9;
+  border-radius: 15px;
+}
+
+.button {
+  margin-top: 20px;
+  margin-left: 15%;
+}
+
+.change_link {
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+.pay {
+  display: flex;
+  width: 625px;
+  height: 112px;
+  background: rgba(255, 255, 255, 0.38);
+  border-radius: 25px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto 150px;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-menu__link {
+    font-size: 1em;
+  }
+  .main-menu__link_img {
+    background: none;
+  }
+  .main-menu_left {
+    margin-left: 0;
+  }
+  .main-menu_center {
+    height: 0;
+    width: 0;
+  }
+  .main-menu_right {
+    margin-left: 20px;
+  }
+  .info {
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 0.7em;
+  }
+  .info_adress {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1800px) {
+  .main-menu__link {
+    font-size: 1.5em;
+  }
+  .main-menu__link_img {
+    background: none;
+  }
+  .main-menu_left {
+    margin-left: 0;
+  }
+  .main-menu_center {
+    height: 0;
+    width: 0;
+  }
+  .main-menu_right {
+    margin-left: 20px;
+  }
+  .info {
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+  .info_adress {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=profile.css.map */
